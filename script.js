@@ -10,6 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const priorityGrid = document.getElementById("priorityGrid");
   const faqItems = document.querySelectorAll(".faq-list details");
 
+  if (navigation && !navigation.querySelector('a[href="community-savings.html"]')) {
+    const savingsLink = document.createElement("a");
+    savingsLink.href = "community-savings.html";
+    savingsLink.textContent = "Community Savings";
+    const callToAction = navigation.querySelector(".nav-cta");
+    navigation.insertBefore(savingsLink, callToAction || null);
+  }
+
   const sleepTopics = {
     side: {
       label: "Sleep & Recovery",
