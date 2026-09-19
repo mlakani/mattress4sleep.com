@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mattress4sleep.com/sitemap.xml
