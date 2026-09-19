@@ -1621,9 +1621,6 @@ footer {
 }
 
 @media (max-width: 620px) {
-  .brand-copy small {
-    display: none;
-  }
 
   .brand-mark {
     width: 43px;
