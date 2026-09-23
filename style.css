@@ -19,6 +19,18 @@
   --radius-lg: 36px;
   --max-width: 1240px;
 }
+/* Fix: re-declare panel grid (original rule lost to stray brace) */
+.sleep-feature-panel {
+  width: min(var(--max-width), 100%);
+  margin: 46px auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 22px;
+  align-items: stretch;
+  text-align: left;
+}
+:root {
+}
 
 * {
   box-sizing: border-box;
