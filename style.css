@@ -1861,6 +1861,7 @@ footer {
 }
 
 @media (max-width: 620px) {
+
   .faq-list details p {
     padding-right: 0;  }
   .consultation-section {
@@ -1883,4 +1884,22 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Photos for the Your Sleep System cards */
+.system-grid article.has-photo {
+  padding-top: 0;
+}
+
+.system-grid article.has-photo .card-photo {
+  display: block;
+  width: calc(100% + 54px);
+  max-width: none;
+  margin: 0 -27px 26px;
+}
+
+.system-grid article.has-photo .card-number {
+  position: static;
+  display: block;
+  margin-bottom: 16px;
 }
