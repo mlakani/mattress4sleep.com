@@ -1,5 +1,6 @@
 :root {
   --navy-950: #071827;
+  
   --navy-900: #0b2238;
   --navy-800: #123554;
   --navy-700: #1c4a6d;
@@ -16,7 +17,7 @@
   --shadow: 0 24px 70px rgba(7, 24, 39, 0.14);
   --radius-sm: 14px;
   --radius-md: 24px;
-  --radius-lg: 36px;
+  --radius-lg: 36px; 
   --max-width: 1240px;
 }
 /* Fix: re-declare panel grid (original rule lost to stray brace) */
@@ -1902,4 +1903,19 @@ footer {
   position: static;
   display: block;
   margin-bottom: 16px;
+}
+
+/* Illustrations for the personalized-guidance concern cards */
+.concern-grid article.has-illustration {
+  padding-top: 0;
+}
+
+.concern-grid article.has-illustration .concern-illustration {
+  display: block;
+  width: calc(100% + 58px);
+  max-width: none;
+  height: 150px;
+  margin: 0 -29px 24px;
+  object-fit: cover;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
